@@ -7,36 +7,43 @@ export default function Header(props) {
   return (
     <header className={styles.contactHeader}>
       <div className={styles.headerContainer}>
-        <div
-          className={styles.headerPieces}
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          Home
+        <div className={styles.pieceContainer}>
+          <div
+            className={styles.headerPieces}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Home
+          </div>
         </div>
-        <div
-          className={styles.headerPieces}
-          onClick={() => {
-            navigate("/products");
-          }}
-        >
-          Product Line
+        <div className={styles.pieceContainer}>
+          <div
+            className={styles.headerPieces}
+            onClick={() => {
+              navigate("/products");
+            }}
+          >
+            Product Line
+          </div>
         </div>
-        <div
-          className={styles.headerPieces}
-          onClick={() => navigate("/services")}
-        >
-          Service & Maintenance
+        <div className={styles.pieceContainer}>
+          <div
+            className={styles.headerPieces}
+            onClick={() => navigate("/services")}
+          >
+            Service & Maintenance
+          </div>
         </div>
-
-        <div
-          onClick={() => {
-            navigate("/contact");
-          }}
-          className={styles.headerPieces}
-        >
-          Contact Us
+        <div className={styles.pieceContainer}>
+          <div
+            onClick={() => {
+              navigate("/contact");
+            }}
+            className={styles.headerPieces}
+          >
+            Contact Us
+          </div>
         </div>
       </div>
     </header>

@@ -4,6 +4,7 @@ import Home from '../Screens/Home'
 import Contact from '../Screens/Contact'
 import Products from '../Screens/Products'
 import Service from '../Screens/Service'
+import Buy from '../Screens/Buy'
 
 
 export default (
@@ -13,6 +14,7 @@ export default (
       <Route path="/contact" element={<Contact />} />
       <Route path="/products" element={<Products />} />
       <Route path="/services" element={<Service />} />
+      <Route path="/buy" element={<Buy />} />
       
     </Routes>
   </BrowserRouter>

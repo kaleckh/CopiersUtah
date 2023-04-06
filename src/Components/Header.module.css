@@ -1,22 +1,35 @@
 .contactHeader {
     background-color: transparent;
     width: 100%;
-    background-color: gray;
     display: flex;
+    color: black;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 7.5vh;
     object-fit: cover;
 }
 
+.pieceContainer {
+    height: 100%;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.pieceContainer:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
 .headerContainer {
     display: flex;
-    width: 50%;
-    height: 8%;
+    width: 100%;
+    height: 70%;
     justify-content: space-evenly;
     color: white;
-    position: absolute;
+    background-color: black;
     align-items: center;
 }
 
@@ -39,10 +52,7 @@
     text-decoration: none;
     transition-delay: 100ms;
     transition-timing-function: ease-out;
-}
-
-.headerPieces:hover {
-    background-color: rgb(6, 95, 113);
+    padding: 10px;
 }
 
 .pic {
