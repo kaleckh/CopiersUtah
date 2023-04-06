@@ -275,11 +275,11 @@ img {
 }
 
 .secondSection {
-    height: 80vh;
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 90%;
+    width: 100%;
 }
 
 .linearImage {
@@ -329,3 +329,79 @@ img {
     grid-row-start: 1;
     grid-column-start: 1;
 }
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(245, 247, 248);
+    height: 100vh;
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.line {
+    height: 0.1px;
+    display: none;
+    width: 100%;
+    background-color: black;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+
+.black {
+    font-size: 30px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+    background-color: transparent;
+    border-color: rgb(169, 172, 173);
+    font-size: 17px;
+}
+
+.numberContainer {
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.light {
+    font-weight: 250;
+    color: rgb(169, 172, 173);
+}
+
+.space {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.inputSingle {
+    width: 60%;
+}
+
+.selected {
+    width: 60%;
+    height: 30px;
+    color: rgb(147, 147, 147);
+    border-color: rgb(147, 147, 147);
+}
+
+.inputDouble {}

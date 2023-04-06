@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Logo from "../Photos/logo.png";
-import Menu from "../Photos/menu.png";
-import Repair from "../Photos/repair.jpg";
+
 import styles from "../Screens/Home.module.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
