@@ -4,7 +4,8 @@ import Home from "../Screens/Home";
 import Buy from "../Screens/Buy";
 import Fix from "../Screens/Fix";
 import Products from "../Screens/Products";
-import Service from "../Screens/Service";
+import ShortTerm from "../Screens/ShortTerm";
+import Finance from "../Screens/Finance";
 
 export default (
   <BrowserRouter>
@@ -12,8 +13,9 @@ export default (
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
       <Route path="/fix" element={<Fix />} />
-      <Route path="/services" element={<Service />} />
+      <Route path="/shortTerm" element={<ShortTerm />} />
       <Route path="/buy" element={<Buy />} />
+      <Route path="/finance" element={<Finance />} />
     </Routes>
   </BrowserRouter>
 );

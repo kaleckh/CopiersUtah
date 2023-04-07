@@ -30,9 +30,9 @@ export default function Header(props) {
         <div className={styles.pieceContainer}>
           <div
             className={styles.headerPieces}
-            onClick={() => navigate("/services")}
+            onClick={() => navigate("/finance")}
           >
-            Service & Maintenance
+            Financing
           </div>
         </div>
         <div className={styles.pieceContainer}>

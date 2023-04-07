@@ -14,8 +14,10 @@ const Home = () => {
         <div className={styles.logoSpace}>
           <img className={styles.logo} src={Logo} alt="" />
           <div className={styles.titleContainer}></div>
-          <div className={styles.menuRow}>
+          <div className={styles.columnContainer}>
+            <div className={styles.infoBig}>Copiers Utah</div>
             <div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+            <div className={styles.infoSmall}>info@copiersutah.com</div>
           </div>
         </div>
       </div>
