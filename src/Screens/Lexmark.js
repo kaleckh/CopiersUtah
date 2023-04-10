@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Logo from '../Photos/logo.png';
-import styles from '../Screens/Products.module.css';
+import styles from '../Screens/Lexmark.module.css';
 import { useNavigate } from 'react-router-dom';
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 const Products = () => {
@@ -47,41 +47,23 @@ const Products = () => {
 					justifyContent: 'center'
 				}}
 			>
-				<div className={styles.color}>Our Products</div>
+				<div className={styles.color}>Konika Minolta</div>
 				<div className={styles.centerLine}>
 					<div className={styles.line} />
 				</div>
 				<div className={styles.row}>
-					<div
-						onClick={() => {
-							navigate('/lexmark');
-						}}
-						className={styles.copierContainer}
-					>
-						<div className={styles.title}>Lexmark</div>
-						<div className={styles.lexmark} />
-					</div>
 					<div
 						className={styles.copierContainer}
 						onClick={() => {
 							navigate('/Konika');
 						}}
 					>
-						<div className={styles.title}>Konika Minolta</div>
 						<div className={styles.konika} />
 					</div>
-					<div
-						className={styles.copierContainer}
-						onClick={() => {
-							navigate('/Epson');
-						}}
-					>
-						<div className={styles.title}>Epson</div>
-						<div className={styles.epson} />
-					</div>
+					<div className={styles.title}>Info About the Minoltas</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };

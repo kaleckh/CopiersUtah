@@ -1,75 +1,56 @@
-import React from "react";
-import styles from "../Components/Form.module.css";
-import { useNavigate } from "react-router-dom";
-import { MDBInput, MDBTextArea } from "mdb-react-ui-kit";
+import React from 'react';
+import styles from '../Components/Form.module.css';
+import { useNavigate } from 'react-router-dom';
+import { MDBInput, MDBTextArea } from 'mdb-react-ui-kit';
 
 const Form = (props) => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.black}>{props.title}</div>
-      <div className={styles.space}>
-        <div className={styles.number}>1</div>
+	return (
+		<div className={styles.container}>
+			<div className={styles.black}>Get Your free Quote!</div>
+			
+			<div style={{width:"100%", display:"flex", flexDirection:"column", justifyContent:"space-evenly", height:"80%", alignItems:"center"}}>
+				<div className={styles.space}>
+					<div className={styles.number}>1</div>
+					<input
+						className={styles.inputSingle}
+						placeholder="Name"
+						type="text"
+						name=""
+						id=""
+						required={true}
+					/>
+				</div>
+				<div className={styles.space}>
+					<div className={styles.number}>2</div>
+					<input
+						className={styles.inputSingle}
+						type="tel"
+						name="telphone"
+						placeholder="Phone Number"
+						pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+						maxlength="12"
+						title="Ten digits code"
+						required
+					/>
+				</div>
 
-        <input
-          placeholder="First Name"
-          type="text"
-          name=""
-          id=""
-          required={true}
-        />
-        <input placeholder="Last Name" type="text" name="" id="" />
-      </div>
+				<div className={styles.space}>
+					<div className={styles.number}>3</div>
+					<textarea
+						placeholder="Comments"
+						className={styles.textarea}
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						style={{ borderColor: 'rgb(169, 172, 173)' }}
+					/>
+				</div>
+			</div>
 
-      <input
-        className={styles.inputSingle}
-        type="tel"
-        name="telphone"
-        placeholder="Phone Number"
-        pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-        maxlength="12"
-        title="Ten digits code"
-        required
-      />
-
-      <input className={styles.inputSingle} type="text" placeholder="Email" />
-      <input
-        className={styles.inputSingle}
-        type="text"
-        placeholder="Street Address"
-      />
-      <div className={styles.space}>
-        <input type="text" placeholder="state" />
-        <input type="text" placeholder="city" />
-      </div>
-      <div className={styles.line}></div>
-      <div className={styles.numberContainer}>
-        <div className={styles.number}>2</div>
-        <div className={styles.light}>Extra Information</div>
-      </div>
-      <select className={styles.selected} id="year">
-        <option value="hide">Price Range</option>
-        <option value="2010">1,000 - 1,999</option>
-        <option value="2010">3,000 - 4,999</option>
-        <option value="2010">5,000 - 9,999</option>
-        <option value="2010">10,000 - 14,999</option>
-        <option value="2010">15,000 - 19,999</option>
-      </select>
-      <select className={styles.selected} id="year">
-        <option value="hide">How Soon Will You Purchase</option>
-        <option value="2010">ASAP</option>
-        <option value="2011">Next Week</option>
-        <option value="2012">A Month</option>
-        <option value="2013">Other</option>
-      </select>
-      <input
-        className={styles.inputSingle}
-        type="text"
-        name=""
-        id=""
-        placeholder="Anything Else?"
-      />
-    </div>
-  );
+			<button onClick={() => {props.quote()}} className={styles.button}>Get My Quote</button>
+		</div>
+	);
 };
 
 export default Form;

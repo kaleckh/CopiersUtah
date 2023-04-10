@@ -52,7 +52,7 @@
     font-weight: 400;
     justify-content: center;
     align-items: end;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .centerLarge {
@@ -279,7 +279,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 90%;
+    width: 100%;
 }
 
 .linearImage {

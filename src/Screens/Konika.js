@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Logo from '../Photos/logo.png';
-import styles from '../Screens/Products.module.css';
+import styles from '../Screens/Konika.module.css';
 import { useNavigate } from 'react-router-dom';
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 const Products = () => {
@@ -47,41 +47,42 @@ const Products = () => {
 					justifyContent: 'center'
 				}}
 			>
-				<div className={styles.color}>Our Products</div>
+				<div className={styles.color}>Konica Minolta</div>
 				<div className={styles.centerLine}>
 					<div className={styles.line} />
 				</div>
 				<div className={styles.row}>
-					<div
-						onClick={() => {
-							navigate('/lexmark');
-						}}
-						className={styles.copierContainer}
-					>
-						<div className={styles.title}>Lexmark</div>
-						<div className={styles.lexmark} />
-					</div>
 					<div
 						className={styles.copierContainer}
 						onClick={() => {
 							navigate('/Konika');
 						}}
 					>
-						<div className={styles.title}>Konika Minolta</div>
 						<div className={styles.konika} />
+						<button className={styles.button}>Request a quote</button>
 					</div>
-					<div
-						className={styles.copierContainer}
-						onClick={() => {
-							navigate('/Epson');
-						}}
-					>
-						<div className={styles.title}>Epson</div>
-						<div className={styles.epson} />
+					<div className={styles.column}>
+						<div className={styles.keyTitle}>Key Features</div>
+						<div className={styles.keyLine} />
+						<div className={styles.keyRow}>
+							<div>
+								<div className={styles.keyPointTitle}>B&W Speed: up to 22 ppm</div>
+								<div className={styles.keyPointTitle}>Color Scanning: up to 45 opm</div>
+							</div>
+							<div>
+								<div className={styles.keyPointTitle}>Max Paper Capacity: 3,600 Sheets</div>
+								<div className={styles.keyPointTitle}>EPEAT Certified Product</div>
+							</div>
+						</div>
+						<div className={styles.row}>
+							<div className={styles.title}>About</div>
+							<div className={styles.title}>Other Features</div>
+						</div>
+						<div className={styles.line} style={{backgroundColor:"black", width:"100%"}}></div>
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };

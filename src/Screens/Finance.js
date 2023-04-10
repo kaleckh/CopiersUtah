@@ -12,9 +12,9 @@ import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 const Finance = () => {
 	const [ toggle, setToggle ] = useState(false);
+	const [ quoteToggle, setQuoteToggle ] = useState(true);
 	const navigate = useNavigate();
 	const tawkMessengerRef = useRef();
-	
 
 	const handleMinimize = () => {
 		tawkMessengerRef.current.minimize();
@@ -52,64 +52,18 @@ const Finance = () => {
 							<div className={styles.woman} />
 						</div>
 						{toggle ? (
-							<div className={styles.container}>
-								<div className={styles.black}>Get Your Quote</div>
-
-								<div className={styles.space}>
-									<div className={styles.number}>1</div>
-
-									<input placeholder="First Name" type="text" name="" id="" required={true} />
-									<input placeholder="Last Name" type="text" name="" id="" />
-								</div>
-
-								<input
-									className={styles.inputSingle}
-									type="tel"
-									name="telphone"
-									placeholder="Phone Number"
-									pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-									maxlength="12"
-									title="Ten digits code"
-									required
-								/>
-
-								<input className={styles.inputSingle} type="text" placeholder="Email" />
-								<input className={styles.inputSingle} type="text" placeholder="Street Address" />
-								<div className={styles.space}>
-									<input type="text" placeholder="state" />
-									<input type="text" placeholder="city" />
-								</div>
-								<div className={styles.line} />
-								<div className={styles.numberContainer}>
-									<div className={styles.number}>2</div>
-									<div className={styles.light}>Extra Information</div>
-								</div>
-								<select className={styles.selected} id="year">
-									<option value="hide">Price Range</option>
-									<option value="2010">1,000 - 1,999</option>
-									<option value="2010">3,000 - 4,999</option>
-									<option value="2010">5,000 - 9,999</option>
-									<option value="2010">10,000 - 14,999</option>
-									<option value="2010">15,000 - 19,999</option>
-								</select>
-								<select className={styles.selected} id="year">
-									<option value="hide">How Soon Will You Purchase</option>
-									<option value="2010">ASAP</option>
-									<option value="2011">Next Week</option>
-									<option value="2012">A Month</option>
-									<option value="2013">Other</option>
-								</select>
-								<input
-									className={styles.inputSingle}
-									type="text"
-									name=""
-									id=""
-									placeholder="Anything Else?"
+							<div>
+								<Form
+									quote={() => {
+										setToggle(false)
+										setQuoteToggle(false)
+									}}
 								/>
 							</div>
 						) : (
+
 							<div className={styles.center}>
-								<div className={styles.titleBig}>Financing Made Easy</div>
+								{quoteToggle ? <><div className={styles.titleBig}>Financing Made Easy</div>
 								<div className={styles.paragraph}>
 									We know how it can be stressful finding a printer. That's why we've made it easier
 									than ever to find your next one and get you all your information on it
@@ -121,7 +75,8 @@ const Finance = () => {
 									className={styles.button}
 								>
 									Get Your Terms
-								</button>
+								</button></> : <div className={styles.title} style={{width:"150%"}}>Awesome, we will be contacting you shortly!</div>}
+								
 							</div>
 						)}
 					</div>

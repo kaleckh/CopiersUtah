@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from '../Components/Header';
 import Form from '../Components/Form';
 import Logo from '../Photos/logo.png';
@@ -9,7 +9,8 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer';
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
-const Home = () => {
+const Home = (props) => {
+	const [ quoteToggle, setQuoteToggle ] = useState(true);
 	const navigate = useNavigate();
 	const tawkMessengerRef = useRef();
 
@@ -41,7 +42,8 @@ const Home = () => {
 			<Header />
 			<div className={styles.secondSection}>
 				<div className={styles.woman} />
-				<Form title={'Get A Quote'} />
+				{quoteToggle ? <><Form quote={() => {setQuoteToggle(!quoteToggle)}} title={'Get A Quote'} /></> : <div className={styles.title} >Awesome, we will be contacting you shortly!</div>}
+				
 			</div>
 
 			<Footer />
