@@ -8,6 +8,10 @@
     background-color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logoSpace {
     height: 30%;
     width: 90%;
@@ -247,6 +251,7 @@ img {
 
 .smallTitle {
     font-weight: 500;
+    padding: 15px;
     font-size: 20px;
 }
 
@@ -339,7 +344,7 @@ img {
 .optionContainer {
     display: flex;
     width: 100%;
-    height: 40%;
+    height: 20%;
     justify-content: space-around;
 }
 
@@ -363,7 +368,7 @@ img {
 }
 
 .logoSpaceContainer {
-    height: 15%;
+    height: 13%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,14 +413,21 @@ img {
 
 .container {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     background-color: rgb(245, 247, 248);
     height: 65vh;
     width: 30vw;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
 }
 
 .line {

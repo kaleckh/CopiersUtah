@@ -5,7 +5,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 40%;
+    height: 20%;
 }
 
 :root {
@@ -20,8 +20,7 @@
 
 .logoSpace {
     height: 30%;
-    background-color: white;
-    width: 65%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +108,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 80%;
 }
 
 .photoBox {
@@ -122,11 +122,50 @@
     background-color: gray;
 }
 
+.lexmark {
+    background-image: url("../Photos/Lexmark.jpg");
+    height: 40vh;
+    width: 30vw;
+    background-size: contain;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
+.konika {
+    background-image: url("../Photos/Konika.jpg");
+    height: 40vh;
+    width: 30vw;
+    background-size: contain;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
+.epson {
+    background-image: url("../Photos/epson.jpg");
+    height: 40vh;
+    width: 30vw;
+    background-size: contain;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
 .logoSpaceContainer {
-    height: 30%;
+    height: 13%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.line {
+    height: 1.5px;
+    width: 40%;
+    background-color: rgb(218, 221, 233);
+}
+
+.centerLine {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .infoSmall {
@@ -148,8 +187,10 @@
 
 .columnContainer {
     display: flex;
-    flex-direction: column;
-    text-align: end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
 }
 
 .overlay {
