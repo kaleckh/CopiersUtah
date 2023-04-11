@@ -30,11 +30,15 @@ const Fix = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-				<div className={styles.logoSpace}>
+					<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
-					<div className={styles.menuRow}>
-						<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+					<div className={styles.columnContainer}>
+						<div className={styles.infoBig}>Copiers Utah</div>
+						<div className={styles.mediumColumn}>
+							<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+							<div className={styles.infoSmall}>info@copiersutah.com</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -42,13 +46,17 @@ const Fix = () => {
 			<div className={styles.secondSection}>
 				<div className={styles.container}>
 					<div className={styles.black}>Schedule A Maintanance Call!</div>
-					<div className={styles.space}>
+					<div style={{width:"95%"}}>
 						<div className={styles.number}>1</div>
-
-						<input placeholder="First Name" type="text" name="" id="" required={true} />
-						<input placeholder="Last Name" type="text" name="" id="" />
+						<input
+							className={styles.inputSingle}
+							placeholder="First Name"
+							type="text"
+							name=""
+							id=""
+							required={true}
+						/>
 					</div>
-
 					<input
 						className={styles.inputSingle}
 						type="tel"
@@ -59,13 +67,7 @@ const Fix = () => {
 						title="Ten digits code"
 						required
 					/>
-
-					<input className={styles.inputSingle} type="text" placeholder="Email" />
-					<input className={styles.inputSingle} type="text" placeholder="Street Address" />
-					<div className={styles.space}>
-						<input type="text" placeholder="state" />
-						<input type="text" placeholder="city" />
-					</div>
+					<input className={styles.inputSingle} type="text" placeholder="Zip Code" />
 					<div className={styles.line} />
 					<div className={styles.numberContainer}>
 						<div className={styles.number}>2</div>
@@ -77,7 +79,6 @@ const Fix = () => {
 						<option value="2010">Afternoon</option>
 						<option value="2010">Evening</option>
 					</select>
-					<input type="date" />
 					<textarea
 						className={styles.inputSingle}
 						type="text"

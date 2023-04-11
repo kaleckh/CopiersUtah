@@ -1,11 +1,10 @@
 import React from 'react';
 
-export const Handshake = () => {
+export const Copier = () => {
 	return (
 		<svg
-            
-			width="500px"
-			height="500px"
+			width="800px"
+			height="800px"
 			viewBox="0 0 24 24"
 			id="Layer_1"
 			dataName="Layer 1"
@@ -17,8 +16,6 @@ export const Handshake = () => {
 					<rect class="cls-1" width="24" height="24" />
 				</clipPath>
 			</defs>
-
-			<title>copier</title>
 
 			<g class="cls-2">
 				<path d="M19.58,21H4.42a2.8,2.8,0,0,1-2.8-2.81V9.58a2.8,2.8,0,0,1,2.8-2.8H19.58a2.8,2.8,0,0,1,2.8,2.8v8.59A2.8,2.8,0,0,1,19.58,21ZM4.42,8.78a.8.8,0,0,0-.8.8v8.59a.8.8,0,0,0,.8.81H19.58a.8.8,0,0,0,.8-.81V9.58a.8.8,0,0,0-.8-.8Z" />

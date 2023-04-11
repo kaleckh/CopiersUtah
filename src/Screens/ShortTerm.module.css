@@ -304,18 +304,18 @@ img {
 }
 
 .infoSmall {
-    color: rgb(101, 2, 53);
+    color: black;
     font-size: 17px;
 }
 
 .infoMedium {
-    color: rgb(101, 2, 53);
+    color: black;
     font-weight: 400;
     font-size: 20px;
 }
 
 .infoBig {
-    color: rgb(101, 2, 53);
+    color: black;
     font-weight: 700;
     font-size: 30px;
 }
@@ -330,6 +330,15 @@ img {
     border-radius: 10px;
     grid-row-start: 1;
     grid-column-start: 1;
+}
+
+@media(width < 850px) {
+    .row {
+        width: 100%;
+    }
+    .black {
+        font-size: 27px;
+    }
 }
 
 @media(width < 600px) {

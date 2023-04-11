@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import Header from '../Components/Header';
 import { Handshake } from '../SVG/Handshake';
+import { Signature } from '../SVG/Signature';
+// import { Handshake } from '../SVG/Handshake';
+// import { Handshake } from '../SVG/Handshake';
 import Form from '../Components/Form';
 import Logo from '../Photos/logo.png';
 import Menu from '../Photos/menu.png';
@@ -33,13 +36,15 @@ const Finance = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-				<div className={styles.logoSpace}>
+					<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
 					<div className={styles.columnContainer}>
 						<div className={styles.infoBig}>Copiers Utah</div>
-						<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
-						<div className={styles.infoSmall}>info@copiersutah.com</div>
+						<div className={styles.mediumColumn}>
+							<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+							<div className={styles.infoSmall}>info@copiersutah.com</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -93,13 +98,14 @@ const Finance = () => {
 				</div>
 				<div className={styles.optionContainer}>
 					<div className={styles.optionsContainer}>
-						<Handshake />
+						
 						<div className={styles.smallTitle}>Rent To Own</div>
 						<div className={styles.info}>
 							As you make your rental payments, you'll be one step closer to owning your copier outright.
 						</div>
 					</div>
 					<div className={styles.optionsContainer}>
+						
 						<div className={styles.smallTitle}>Easy Leases</div>
 						<div className={styles.info}>
 							Our leases are designed to fit your budget and your business needs, with fliexible terms and

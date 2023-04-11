@@ -344,6 +344,7 @@ img {
 
 .mediumColumn {
     display: flex;
+    flex-direction: column;
 }
 
 @media (width < 1100px) {

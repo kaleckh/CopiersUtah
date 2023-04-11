@@ -321,3 +321,46 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media(width < 1200px) {
+    .keyPointTitle {
+        font-size: 16px;
+    }
+}
+
+@media(width < 1050px) {
+    .keyPointTitle {
+        font-size: 16px;
+    }
+    .row {
+        width: 90%;
+    }
+}
+
+@media(width < 750px) {
+    .lexmark {
+        height: 36vh;
+    }
+}
+
+@media(width < 550px) {
+    .focusTitle {
+        font-size: 23px;
+    }
+    .focusTitleGray {
+        font-size: 23px;
+    }
+    .focusTitle:hover {
+        color: black;
+        background-color: rgb(245, 245, 245);
+        font-size: 23px;
+        font-weight: 300;
+        padding: 0px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .button {
+        font-size: 13px;
+        width: 80%;
+    }
+}

@@ -133,9 +133,20 @@
     
     .inputDouble {}
     
+    @media(width < 700px) {
+        .container {
+            width: 45vw;
+            font-size: 27px;
+        }
+        .woman {
+            display: none;
+        }
+    }
+    
     @media(width < 600px) {
         .container {
             width: 60vw;
+            font-size: 27px;
         }
         .woman {
             display: none;

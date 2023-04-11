@@ -329,3 +329,15 @@ img {
     grid-row-start: 1;
     grid-column-start: 1;
 }
+
+@media(width < 850px) {
+    .black {
+        font-size: 27px;
+    }
+}
+
+@media(width < 640px) {
+    .woman {
+        display: none;
+    }
+}

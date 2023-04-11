@@ -26,13 +26,15 @@ const Products = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-				<div className={styles.logoSpace}>
+					<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
 					<div className={styles.columnContainer}>
 						<div className={styles.infoBig}>Copiers Utah</div>
-						<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
-						<div className={styles.infoSmall}>info@copiersutah.com</div>
+						<div className={styles.mediumColumn}>
+							<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+							<div className={styles.infoSmall}>info@copiersutah.com</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -52,13 +54,17 @@ const Products = () => {
 					<div className={styles.line} />
 				</div>
 				<div className={styles.row}>
+					<div className={styles.title}>Lexmark</div>
+					<div className={styles.title}>Konica Minolta</div>
+					<div className={styles.title}>Epson</div>
+				</div>
+				<div className={styles.copierRow}>
 					<div
 						onClick={() => {
 							navigate('/Lexmark');
 						}}
 						className={styles.copierContainer}
 					>
-						<div className={styles.title}>Lexmark</div>
 						<div className={styles.lexmark} />
 					</div>
 					<div
@@ -67,7 +73,6 @@ const Products = () => {
 							navigate('/Konika');
 						}}
 					>
-						<div className={styles.title}>Konika Minolta</div>
 						<div className={styles.konika} />
 					</div>
 					<div
@@ -76,12 +81,11 @@ const Products = () => {
 							navigate('/Epson');
 						}}
 					>
-						<div className={styles.title}>Epson</div>
-						<div className={styles.epson} />
+						<div style={{marginTop:"40px"}} className={styles.epson} />
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };

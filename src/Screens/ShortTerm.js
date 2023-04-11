@@ -30,13 +30,15 @@ const Home = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-				<div className={styles.logoSpace}>
+					<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
 					<div className={styles.columnContainer}>
 						<div className={styles.infoBig}>Copiers Utah</div>
-						<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
-						<div className={styles.infoSmall}>info@copiersutah.com</div>
+						<div className={styles.mediumColumn}>
+							<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+							<div className={styles.infoSmall}>info@copiersutah.com</div>
+						</div>
 					</div>
 				</div>
 			</div>

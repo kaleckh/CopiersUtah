@@ -151,14 +151,7 @@ const Products = () => {
 												workloads
 											</div>
 										</div>
-										<div className={styles.bulletContainer}>
-											<div className={styles.bullet}>1s</div>
-											<div className={styles.paragraphSmall}>
-												The bizhub 227 multifunction printers from Konica Minolta have a
-												print/copy output of up to 22 ppm to help keep pace with growing
-												workloads
-											</div>
-										</div>
+									
 									</div>
 								)}
 							</div>

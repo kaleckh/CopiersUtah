@@ -394,11 +394,11 @@ input {
 }
 
 .inputSingle {
-    width: 60%;
+    width: 80%;
 }
 
 .selected {
-    width: 60%;
+    width: 80%;
     height: 30px;
     color: rgb(147, 147, 147);
     border-color: rgb(147, 147, 147);
@@ -409,5 +409,8 @@ input {
 @media(width < 600px) {
     .container {
         width: 85vw;
+    }
+    .selected {
+        width: 80%;
     }
 }
