@@ -54,7 +54,7 @@ const Products = () => {
 				<div className={styles.row}>
 					<div
 						onClick={() => {
-							navigate('/lexmark');
+							navigate('/Lexmark');
 						}}
 						className={styles.copierContainer}
 					>

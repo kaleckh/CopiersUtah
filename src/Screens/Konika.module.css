@@ -5,7 +5,6 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 20%;
 }
 
 :root {
@@ -16,6 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 80%;
 }
 
 .keyTitle {
@@ -31,7 +31,12 @@
 .main {
     width: 100%;
     height: 100vh;
-    color: white;
+}
+
+.backContainer {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
 }
 
 .logoSpace {
@@ -104,9 +109,40 @@
     text-align: center;
 }
 
+.focusTitle {
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    transition: all ease-in .3s;
+}
+
+.focusTitle:hover {
+    color: black;
+    background-color: rgb(245, 245, 245);
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.focusTitleGray {
+    color: black;
+    background-color: rgb(245, 245, 245);
+    font-size: 30px;
+    font-weight: 300;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 .keyPointTitle {
     color: black;
-    font-size: 20px;
+    font-size: 19px;
     padding: 10px;
     font-weight: 300;
     text-align: center;
@@ -132,8 +168,40 @@
 
 .paragraph {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
+}
+
+.lineColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraphSmall {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bulletContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.bullet {
+    background-color: black;
+    color: transparent;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
 }
 
 .logo {
@@ -146,8 +214,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 70%;
+    width: 77%;
+}
+
+.aboutRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
-    width: 70%;
+    padding: 10px;
+    width: 100%;
 }
 
 .keyRow {
@@ -183,6 +260,7 @@
     background-size: contain;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .epson {
@@ -203,7 +281,7 @@
 
 .line {
     height: 1.5px;
-    width: 40%;
+    width: 150%;
     background-color: rgb(218, 221, 233);
 }
 

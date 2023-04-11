@@ -132,3 +132,12 @@
     }
     
     .inputDouble {}
+    
+    @media(width < 600px) {
+        .container {
+            width: 60vw;
+        }
+        .woman {
+            display: none;
+        }
+    }

@@ -60,9 +60,3 @@
     object-fit: cover;
     width: 100%;
 }
-
-@media (width < 1000px) {
-    .headerContainer {
-        width: 70%;
-    }
-}

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import Header from '../Components/Header';
 import Logo from '../Photos/logo.png';
 
@@ -19,7 +19,7 @@ const Home = () => {
 	};
 	return (
 		<div className={styles.main}>
-			<div >
+			<div>
 				<TawkMessengerReact
 					onLoad={onLoad}
 					propertyId="5abd4931d7591465c7090c65"
@@ -28,13 +28,15 @@ const Home = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-				<div className={styles.logoSpace}>
+					<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
 					<div className={styles.columnContainer}>
 						<div className={styles.infoBig}>Copiers Utah</div>
-						<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
-						<div className={styles.infoSmall}>info@copiersutah.com</div>
+						<div className={styles.mediumColumn}>
+							<div className={styles.infoMedium}>Ph: (801) 261 - 0510</div>
+							<div className={styles.infoSmall}>info@copiersutah.com</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -54,15 +56,7 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div
-					style={{
-						height: '93%',
-						width: '40%',
-						display: 'flex',
-						flexDirection: 'column',
-						justifyContent: 'space-evenly'
-					}}
-				>
+				<div className={styles.somethingContainer}>
 					<div className={styles.row}>
 						<div
 							onClick={() => {

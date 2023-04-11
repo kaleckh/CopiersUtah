@@ -142,6 +142,14 @@ img {
     border-radius: 10px;
 }
 
+.somethingContainer {
+    height: 93%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .repair {
     background-image: url("../Photos/repair.jpg");
     height: 30vh;
@@ -149,6 +157,7 @@ img {
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .toner {
@@ -158,6 +167,7 @@ img {
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .itWork {
@@ -167,6 +177,7 @@ img {
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .construction {
@@ -176,15 +187,17 @@ img {
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .woman {
     background-image: url("../Photos/smilingWoman.jpg");
     height: 66vh;
-    width: 40vw;
+    width: 100%;
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .shade {
@@ -327,4 +340,88 @@ img {
     border-radius: 10px;
     grid-row-start: 1;
     grid-column-start: 1;
+}
+
+.mediumColumn {
+    display: flex;
+}
+
+@media (width < 1100px) {
+    .secondSection {
+        width: 95%;
+    }
+    .mediumColumn {
+        flex-direction: column;
+    }
+}
+
+@media (width < 1000px) {
+    .secondSection {
+        flex-direction: column;
+        align-items: center;
+        height: 125vh;
+        width: 100%;
+    }
+    .woman {
+        height: 55vh;
+        width: 64vw;
+    }
+    .toner {
+        width: 35vw;
+    }
+    .repair {
+        width: 35vw;
+    }
+    .construction {
+        width: 35vw;
+    }
+    .itWork {
+        width: 35vw;
+    }
+    .somethingContainer {
+        width: 76%;
+    }
+    .shadeBig:hover {
+        padding: 10px;
+        padding-bottom: 10px;
+        background-color: gray;
+        transition: all 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+}
+
+@media(width < 790px) {
+    .woman {
+        width: 100%;
+    }
+    .toner {
+        width: 40vw;
+    }
+    .construction {
+        width: 40vw;
+    }
+    .itWork {
+        width: 40vw;
+    }
+    .repair {
+        width: 40vw;
+    }
+    .somethingContainer {
+        width: 87%;
+    }
+    .centerLarge {
+        font-size: 45px;
+    }
+}
+
+@media(width < 600px) {
+    .infoMedium {
+        font-size: 17px;
+    }
+}
+
+@media(width < 510px) {
+    .center {
+        font-size: 22px;
+    }
 }

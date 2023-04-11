@@ -405,3 +405,9 @@ input {
 }
 
 .inputDouble {}
+
+@media(width < 600px) {
+    .container {
+        width: 85vw;
+    }
+}

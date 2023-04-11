@@ -7,6 +7,8 @@ import Products from "../Screens/Products";
 import ShortTerm from "../Screens/ShortTerm";
 import Finance from "../Screens/Finance";
 import Konika from "../Screens/Konika";
+import Lexmark from "../Screens/Lexmark";
+import Epson from "../Screens/Epson";
 
 export default (
   <BrowserRouter>
@@ -14,8 +16,8 @@ export default (
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
       <Route path="/Konika" element={<Konika />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/products" element={<Products />} />
+      <Route path="/Lexmark" element={<Lexmark />} />
+      <Route path="/Epson" element={<Epson />} />
       <Route path="/fix" element={<Fix />} />
       <Route path="/shortTerm" element={<ShortTerm />} />
       <Route path="/buy" element={<Buy />} />
