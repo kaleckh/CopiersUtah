@@ -79,7 +79,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className={styles.row}>
-						<div className={styles.shade}>
+						<div onClick={() => {navigate('/itWork')}} className={styles.shade}>
 							<div className={styles.parent}>
 								<div className={styles.itWork} />
 								<div className={styles.overlay} />

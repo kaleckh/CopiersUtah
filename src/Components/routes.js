@@ -9,6 +9,7 @@ import Finance from "../Screens/Finance";
 import Konika from "../Screens/Konika";
 import Lexmark from "../Screens/Lexmark";
 import Epson from "../Screens/Epson";
+import ItWork from "../Screens/ItWork";
 
 export default (
   <BrowserRouter>
@@ -22,6 +23,7 @@ export default (
       <Route path="/shortTerm" element={<ShortTerm />} />
       <Route path="/buy" element={<Buy />} />
       <Route path="/finance" element={<Finance />} />
+      <Route path="/itWork" element={<ItWork />} />
     </Routes>
   </BrowserRouter>
 );
