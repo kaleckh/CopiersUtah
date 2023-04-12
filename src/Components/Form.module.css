@@ -131,7 +131,10 @@
         border-color: rgb(147, 147, 147);
     }
     
-    .inputDouble {}
+    .inputDouble {
+        display: flex;
+        align-items: center;
+    }
     
     @media(width < 700px) {
         .container {

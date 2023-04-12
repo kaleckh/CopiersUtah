@@ -103,12 +103,6 @@
     width: 80%;
 }
 
-.paragraph {
-    color: black;
-    font-size: 25px;
-    font-weight: 200;
-}
-
 .logo {
     width: 170px;
     height: 170px;
@@ -177,10 +171,10 @@ img {
     background-repeat: no-repeat;
 }
 
-.woman {
-    background-image: url("../Photos/buy.jpg");
-    height: 66vh;
-    width: 40vw;
+.itSupport {
+    background-image: url("../Photos/itSupport.jpg");
+    height: 62vh;
+    width: 33vw;
     background-size: cover;
     border-radius: 15px;
     background-repeat: no-repeat;
@@ -242,17 +236,32 @@ img {
 }
 
 .title {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
     color: black;
-    text-align: center;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+.paragraph {
+    color: black;
+    font-size: 15px;
+    font-weight: 250;
+    line-height: 20px;
+    padding-left: 10px;
 }
 
 .titleBig {
+    display: flex;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: 300;
     letter-spacing: 1.5px;
+}
+
+.bold {
+    font-weight: 500;
+    padding-left: 10px;
 }
 
 .titleContainer {
@@ -263,9 +272,21 @@ img {
 
 .row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100vw;
+    justify-content: center;
+}
+
+.sideRowLeft {
+    width: 20%;
+    text-align: end;
+    padding: 20px;
+}
+
+.sideRowRight {
+    width: 20%;
+    padding: 20px;
+    text-align: left;
 }
 
 .photoBox {
@@ -278,6 +299,7 @@ img {
     height: 80vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
 }
