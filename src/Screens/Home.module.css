@@ -56,6 +56,17 @@
     letter-spacing: 1.5px;
 }
 
+.centerReview {
+    height: 10%;
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: end;
+    letter-spacing: 1.5px;
+}
+
 .centerLarge {
     display: flex;
     height: 100%;
@@ -94,7 +105,9 @@
 }
 
 .paragraphContainer {
-    width: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .smaller {
@@ -143,7 +156,7 @@ img {
 }
 
 .somethingContainer {
-    height: 93%;
+    height: 75vh;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -208,20 +221,15 @@ img {
 .shadeBig {
     padding: 10px;
     border-radius: 10px;
+    width: 50%;
 }
 
 .shadeBig:hover {
     padding: 10px;
-    padding-bottom: 55px;
-    background-color: gray;
-    transition: all 0.3s ease-in-out;
     border-radius: 10px;
 }
 
-.shade:hover {
-    background-color: gray;
-    transition: all 0.3s ease-in-out;
-}
+.shade:hover {}
 
 .sectionBig {
     box-shadow: 1px 1px 9px gray;
@@ -236,6 +244,7 @@ img {
 }
 
 .smallRow {
+    width: 100%;
     display: flex;
 }
 
@@ -258,7 +267,7 @@ img {
 .title {
     font-size: 25px;
     font-weight: 500;
-    color: white;
+    color: black;
     text-align: center;
     letter-spacing: 1.5px;
 }
@@ -269,6 +278,41 @@ img {
     letter-spacing: 1.5px;
 }
 
+.reviewBig {
+    color: black;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    padding: 50px;
+}
+
+.needSpace {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titleSmall {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+}
+
+.middle {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallParagraph {
+    font-weight: 200;
+}
+
 .titleContainer {
     width: 28%;
     display: flex;
@@ -277,9 +321,18 @@ img {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    height: 46vh;
+}
+
+.reviewRow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    height: 30vh;
 }
 
 .photoBox {
@@ -288,10 +341,26 @@ img {
     background-color: white;
 }
 
-.secondSection {
-    height: 80vh;
+.flex {
     display: flex;
-    justify-content: space-evenly;
+    height: 85vh;
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondSection {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: rgb(218, 221, 233);
 }
 
 .linearImage {
@@ -385,13 +454,11 @@ img {
     .shadeBig:hover {
         padding: 10px;
         padding-bottom: 10px;
-        background-color: gray;
-        transition: all 0.3s ease-in-out;
         border-radius: 10px;
     }
 }
 
-@media(width < 790px) {
+@media (width < 790px) {
     .woman {
         width: 100%;
     }
@@ -415,13 +482,13 @@ img {
     }
 }
 
-@media(width < 600px) {
+@media (width < 600px) {
     .infoMedium {
         font-size: 17px;
     }
 }
 
-@media(width < 510px) {
+@media (width < 510px) {
     .center {
         font-size: 22px;
     }

@@ -7,7 +7,7 @@ import styles from '../Screens/Konika.module.css';
 import { useNavigate } from 'react-router-dom';
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useState } from 'react';
-const Konika = () => {
+const Products = () => {
 	const navigate = useNavigate();
 	const tawkMessengerRef = useRef();
 	const [ gray, setGray ] = useState(true);
@@ -164,4 +164,4 @@ const Konika = () => {
 	);
 };
 
-export default Konika;
+export default Products;

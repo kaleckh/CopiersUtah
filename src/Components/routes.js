@@ -10,11 +10,15 @@ import Konika from "../Screens/Konika";
 import Lexmark from "../Screens/Lexmark";
 import Epson from "../Screens/Epson";
 import ItWork from "../Screens/ItWork";
+import Toner from "../Screens/Toner";
+import KonikaToner from "../Screens/KonikaToner";
 
 export default (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/konikatoner" element={<KonikaToner />} />
+      <Route path="/buytoner" element={<Toner />} />
       <Route path="/products" element={<Products />} />
       <Route path="/Konika" element={<Konika />} />
       <Route path="/Lexmark" element={<Lexmark />} />
