@@ -57,7 +57,7 @@
 }
 
 .centerReview {
-    height: 10%;
+    height: 50%;
     display: flex;
     width: 100%;
     font-size: 25px;
@@ -221,7 +221,7 @@ img {
 .shadeBig {
     padding: 10px;
     border-radius: 10px;
-    width: 50%;
+    width: 45%;
 }
 
 .shadeBig:hover {
@@ -399,17 +399,40 @@ img {
     width: 80%;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: 1fr;
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hide {
+    color: white;
+    opacity: 0;
+    width: 100px;
+    transition: ease-in-out all .7s;
+}
+
+.parent:hover .hide {
+    opacity: 1;
 }
 
 .parent div {
     background-color: rgba(0, 0, 0, 0.1);
+    color: white;
     border-radius: 10px;
     grid-row-start: 1;
     grid-column-start: 1;
+    position: relative;
 }
+
+.parent {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.overlay {}
 
 .mediumColumn {
     display: flex;
