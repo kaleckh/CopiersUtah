@@ -287,7 +287,7 @@ img {
 }
 
 .needSpace {
-    height: 100%;
+    height: 63vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -431,8 +431,6 @@ img {
     display: grid;
     grid-template-columns: 1fr;
 }
-
-.overlay {}
 
 .mediumColumn {
     display: flex;

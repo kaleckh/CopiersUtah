@@ -30,7 +30,7 @@ const Fix = () => {
 				/>
 			</div>
 			<div className={styles.logoSpaceContainer}>
-					<div className={styles.logoSpace}>
+				<div className={styles.logoSpace}>
 					<img className={styles.logo} src={Logo} alt="" />
 					<div className={styles.titleContainer} />
 					<div className={styles.columnContainer}>
@@ -46,9 +46,9 @@ const Fix = () => {
 			<div className={styles.secondSection}>
 				<div className={styles.container}>
 					<div className={styles.black}>Schedule A Maintanance Call!</div>
-					<div style={{width:"95%"}}>
+					<div style={{ width: '95%' }}>
 						<div className={styles.number}>1</div>
-						<input
+						<input style={{width:"84%"}}
 							className={styles.inputSingle}
 							placeholder="First Name"
 							type="text"
@@ -86,6 +86,7 @@ const Fix = () => {
 						id=""
 						placeholder="What type of service?"
 					/>
+					<button className={styles.button}>Get quote!</button>
 				</div>
 			</div>
 

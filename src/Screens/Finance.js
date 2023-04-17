@@ -82,7 +82,7 @@ const Finance = () => {
 									className={styles.button}
 								>
 									Get Your Terms
-								</button></> : <div className={styles.title} style={{width:"150%"}}>Awesome, we will be contacting you shortly!</div>}
+								</button></> : <div className={styles.title} style={{width:"140%", fontWeight:"300"}}>Awesome, we will be contacting you shortly!</div>}
 								
 							</div>
 						)}

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import Header from '../Components/Header';
 import Form from '../Components/Form';
 import Logo from '../Photos/logo.png';
@@ -11,6 +11,7 @@ import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 const Home = () => {
   const tawkMessengerRef = useRef();
+  const [quote, setQuote] = useState(false);
 
 	const handleMinimize = () => {
 		tawkMessengerRef.current.minimize();
@@ -49,7 +50,8 @@ const Home = () => {
 					<div className={styles.column}>
 						<div className={styles.woman} />
 					</div>
-					<Form title={'Get A Quote'} />
+					{quote ? <div style={{fontSize:"30px", fontWeight:"300"}} className={styles.title}>Awesome, you're next in line for a call!</div> : <Form quote={() => {setQuote(!quote)}} title={'Get A Quote'} />}
+					
 				</div>
 			</div>
 

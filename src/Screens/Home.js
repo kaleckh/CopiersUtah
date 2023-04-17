@@ -57,6 +57,7 @@ const Home = () => {
 							<div className={styles.woman} />
 
 							<div className={styles.overlay}>
+								
 								<div className={styles.centerLarge}>Buy Or Lease A Copier</div>
 							</div>
 						</div>
@@ -161,7 +162,7 @@ const Home = () => {
 						</a>
 					</div>
 				</div>
-				<div className={styles.line} />
+				
 			</div>
 
 			<Footer />

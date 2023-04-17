@@ -245,7 +245,7 @@ img {
 
 .title {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
     text-align: center;
 }
@@ -266,7 +266,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 75%;
 }
 
 .photoBox {
@@ -281,7 +281,7 @@ img {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 87%;
+    width: 100%;
 }
 
 .linearImage {
